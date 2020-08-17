@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {storeProducts, detailProduct} from './data';
-import { ThemeProvider } from 'styled-components';
+
 
 //contextAPI
 const ProductContext = React.createContext();
