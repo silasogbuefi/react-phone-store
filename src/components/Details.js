@@ -9,7 +9,12 @@ export default class Details extends Component {
         return (
             <ProductConsumer>
                 {(value) => {
-                const {id,company,img,info,price,title,inCart} =   value.detailProduct;
+                const {id,
+                    company,
+                    img,info,
+                    price,
+                    title,
+                    inCart} =   value.detailProduct;
                 return (
                     <div className="container py-5">
                         {/* {title} */}
@@ -48,11 +53,12 @@ export default class Details extends Component {
                                          <ButtonContainer>back to products</ButtonContainer>
                                      </Link>
                                      <ButtonContainer cart
-                                     disabled={inCart?true:false}
+                                     disabled={inCart ? true : false}
                                      onClick={()=> {
                                          value.addToCart(id);
+                                         value.openModal(id);
                                      }}>
-                                         {inCart ? "incart" : "add to cart"}
+                                         {inCart ? "in cart" : "add to cart"}
                                      </ButtonContainer>
                                  </div>
                                 
