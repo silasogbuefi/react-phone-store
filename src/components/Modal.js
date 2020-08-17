@@ -45,7 +45,7 @@ export default class Modal extends Component {
                         );
                         
                     }
-                    return
+                   
                 }}
             </ProductConsumer>
         )
